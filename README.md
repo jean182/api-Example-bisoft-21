@@ -1,24 +1,34 @@
-# README
+# API Example BISOFT-21
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project to showcase a RESTFUL API
+Built with Ruby On Rails
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+- Ruby 2.4.1
+- Rails 5.2.2
+- PostgreSQL v9.6 or greater
 
-* System dependencies
+## Development Setup
 
-* Configuration
+### Define ruby gemset
 
-* Database creation
+If using RVM, be sure to set up your gemset:
 
-* Database initialization
+    cd api-example-bisoft-21
+    echo "api-example-bisoft-21" > .ruby-gemset
+    cd ..
+    cd api-example-bisoft-21
 
-* How to run the test suite
+### Bundle
 
-* Services (job queues, cache servers, search engines, etc.)
+    gem install bundler
+    bundle
 
-* Deployment instructions
+### Create database
 
-* ...
+    rails db:create
+
+### Migrate and seed database
+
+    rails db:setup
