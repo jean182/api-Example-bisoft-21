@@ -32,7 +32,7 @@ RSpec.describe BooksController, type: :controller do
   let(:valid_attributes) {
     {
       title: "Christine",
-      plot: "Christine is a horror novel written by Stephen King, published in 1983. It tells the story of a 1958 Plymouth Fury apparently possessed by supernatural forces.",
+      plot: "Christine",
       author: author,
       release_date: Date.parse('1983-04-29')
     }
@@ -54,7 +54,6 @@ RSpec.describe BooksController, type: :controller do
 
   describe "GET #index" do
     it "returns a success response" do
-      book = Book.create! valid_attributes
       get :index, params: {}, session: valid_session
       expect(response).to be_successful
     end

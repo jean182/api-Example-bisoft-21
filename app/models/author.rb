@@ -12,5 +12,5 @@
 
 class Author < ApplicationRecord
   validates :full_name, presence: true
-  has_many :books
+  has_many :books, dependent: :destroy
 end
