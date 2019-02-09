@@ -3,6 +3,14 @@
 Project to showcase a RESTFUL API
 Built with Ruby On Rails
 
+## Endpoints
+
+**Home:** /,
+**books GET/POST::** /books,
+**book GET/PUT/PATCH/DELETE:** /book/:id,
+**authors GET/POST:** /authors,
+**author GET/PUT/PATCH/DELETE:** /book/:id
+
 ## Dependencies
 
 - Ruby 2.4.1
